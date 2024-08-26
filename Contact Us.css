@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4.5em;
+  color: white;
+  -webkit-text-stroke: 1px aqua;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.person {
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.person h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.person img {
+  width: 100%;
+  z-index: 98;
+  height: 500px;
+  border-radius: 8px;
+  margin: 10px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  transition: 0.5s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.05);
+}
+
+.person .image1 {
+  height: 30vw;
+  background: url("/media/anwar.jpg") no-repeat center/cover;
+}
+.person .image2 {
+  height: 30vw;
+  background: url("/media/abhishek.jpg") no-repeat center/cover;
+}
+.person .image3 {
+  height: 30vw;
+  background: url("/media/praveen.jpg") no-repeat center/cover;
+}
+
+.person p {
+  margin: 10px 0;
+  font-size: 1em;
+  font-style: italic;
+  color: #555;
+  margin-top: 3vw;
+  font-weight: bold;
+}

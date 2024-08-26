@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.h1 {
+  background-image: url("/media/b2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  background-color: rgb(
+    134 126 126 / 0%
+  ); /* Semi-transparent black background */
+  margin-top: 5px;
+}
+
+.nav li {
+  margin: 0 10px;
+  /* Less margin for tighter spacing */
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.nav li a:hover {
+  color: rgb(197, 240, 255);
+  transform: scale(1.1);
+  display: inline-block; /* Necessary to apply transform */
+  transition: transform 0.3s ease;
+}
+
+.nav .logo {
+  margin-right: 5px; /* Space between logo and navigation items */
+  margin-top: 0px;
+}
+
+.nav .logo img {
+  height: 70px; /* Adjust the height as needed */
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.nav .login {
+  margin-left: auto; /* Aligns the login link to the far right */
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 600%;
+  color: aliceblue;
+  margin: 30px 0px 0px 200px;
+  -webkit-text-stroke: 1px black;
+}
+p {
+  font-size: 130%;
+  color: aliceblue;
+  margin: 0px 0px 0px 200px;
+  text-align: justify;
+  width: 700px;
+}
+.logo img:hover {
+  transform: scale(1.1);
+  display: inline-block; /* Necessary to apply transform */
+  transition: transform 0.3s ease;
+}

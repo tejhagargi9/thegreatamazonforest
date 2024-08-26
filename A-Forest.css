@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Removes horizontal scrollbar */
+  background-color: #000000; /* Light gray background */
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  color: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.row .column img {
+  width: 900px;
+  height: 450px;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 90px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px aqua;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.content p {
+  font-size: 32px;
+  line-height: 1.6;
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
+  text-align: justify;
+}
+.row img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
